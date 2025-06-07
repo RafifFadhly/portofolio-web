@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kartu Pengenalan Diri</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <section class="welcome-section">
+        <div class="welcome-overlay"></div>
+        <div class="welcome-text">
+            <h1>Selamat Datang di Portofolio Saya</h1>
+            <p>Rafif Dev</p>
+        </div>
+    </section>
+    <main class="container">
+        <!-- Intro Card -->
+        <section class="intro-card">
+            <div class="profile-img" aria-label="Foto profil" role="img" style="background-image: url('foto/pp.png');">
+            </div>
+            <div class="intro-content">
+                <h1>Hai, Nama saya <br> RAFIF FADHLY</h1>
+                <p>
+                    Saya adalah seorang Unity Game Developer dan Web Novice/junior Programmer dengan minat besar
+                    terhadap
+                    pengembangan perangkat lunak dan game. Saya juga memiliki ketertarikan dalam bidang pengolahan data,
+                    aplikasi Dekstop serta desain 3D.
+                </p>
+                <p>
+                    Saya lulusan SMK Telkom Purwokerto tahun 2025, jurusan Rekayasa Perangkat Lunak dan Game. Saat ini,
+                    saya sedang menempuh pendidikan S1 Teknik Informatika di Universitas Negeri Semarang.
+                </p>
+
+                <div class="contacts" aria-label="Kontak">
+                    <a href="https://wa.me/6282329216225" target="_blank" aria-label="WhatsApp" class="contact-item">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                    <a href="https://instagram.com/rafif_dev" target="_blank" aria-label="Instagram"
+                        class="contact-item">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="mailto:rafiffadhly@gmail.com" aria-label="Email" class="contact-item">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Cards -->
+        <section class="info-wrapper">
+
+            <article class="collapsible-card">
+                <button class="toggle-btn" aria-expanded="false" aria-controls="biodata"
+                    onclick="toggleSection('biodata')">
+                    Biodata
+                </button>
+                <div id="biodata" class="collapsible-content" role="region" aria-hidden="true">
+                    <ul class="biodata-list">
+                        <li>Nama : Rafif Fadhly Adi Suwignyo</li>
+                        <li>TTL : Brebes, 15 Juli 2007</li>
+                        <li>Jenis Kelamin : Laki-laki</li>
+                        <li>Status : Mahasiswa S1 (Belum Menikah)</li>
+                        <li>Agama : Islam</li>
+                        <li>Kewarganegaraan : Indonesia</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="collapsible-card">
+                <button class="toggle-btn" aria-expanded="false" aria-controls="edu" onclick="toggleSection('edu')">
+                    Riwayat Pendidikan
+                </button>
+                <div id="edu" class="collapsible-content" role="region" aria-hidden="true">
+                    <div class="edu-item">
+                        <img src="foto/telkom.png" alt="Logo SMK Telkom Purwokerto" />
+                        <div class="edu-text">
+                            <h3>SMK Telkom Purwokerto</h3>
+                            <p>Rekayasa Perangkat Lunak & Game - Lulus 2025</p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <img src="foto/unnes.png" alt="Logo Universitas Negeri Semarang" />
+                        <div class="edu-text">
+                            <h3>Universitas Negeri Semarang</h3>
+                            <p>Teknik Informatika (S1) - Aktif</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="collapsible-card">
+                <button class="toggle-btn" aria-expanded="false" aria-controls="Software"
+                    onclick="toggleSection('Software')">
+                    Software
+                </button>
+                <div id="Software" class="collapsible-content" role="region" aria-hidden="true">
+                    <div class="edu-item">
+                        <img src="foto/unity.png" alt="Unity" />
+                        <div class="edu-text">
+                            <h3>Unity</h3>
+                            <p>Menggunakan sejak tahun 2023 untuk membuat game dan aplikasi</p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <img src="foto/blender.png" alt="Blender" />
+                        <div class="edu-text">
+                            <h3>Blender</h3>
+                            <p>Menggunakan sejak tahun 2023 untuk membuat 3D model game atau lainnya</p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <img src="foto/ggclb.png" alt="Google Colab" />
+                        <div class="edu-text">
+                            <h3>Google Colab</h3>
+                            <p>Menggunakan sejak tahun 2023 untuk belajar bahasa Python dan Data Science</p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <img src="foto/vs.png" alt="Visual Studio Code" />
+                        <div class="edu-text">
+                            <h3>Visual Studio Code</h3>
+                            <p>Menggunakan sejak tahun 2022 sebagai code editor dan membuat web</p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <img src="foto/vsu.png" alt="Visual Studio" />
+                        <div class="edu-text">
+                            <h3>Visual Studio</h3>
+                            <p>Menggunakan sejak tahun 2022 untuk membuat aplikasi desktop atau game</p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <img src="foto/xampp.png" alt="XAMPP" />
+                        <div class="edu-text">
+                            <h3>XAMPP</h3>
+                            <p>Menggunakan sejak tahun 2022 untuk uji coba web dan database SQL</p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <img src="foto/fgm.png" alt="Figma" />
+                        <div class="edu-text">
+                            <h3>Figma</h3>
+                            <p>Menggunakan sejak tahun 2022 untuk membuat prototipe desain aplikasi</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="collapsible-card">
+                <button class="toggle-btn" aria-expanded="false" aria-controls="Skills"
+                    onclick="toggleSection('Skills')">
+                    Skills
+                </button>
+                <div id="Skills" class="collapsible-content" role="region" aria-hidden="true">
+                    <div class="edu-item">
+                        <img src="foto/unity.png" alt="Unity" />
+                        <div class="edu-text">
+                            <h3>Unity Game Developer</h3>
+                            <p>Ahli dalam menggunakan Unity untuk membuat game baik sendiri atau tim.</p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <img src="foto/cs.png" alt="C#" />
+                        <div class="edu-text">
+                            <h3>C# Programmer</h3>
+                            <p>Ahli dalam menggunakan bahasa C# untuk aplikasi desktop dan game</p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <img src="foto/blender.png" alt="blender" />
+                        <div class="edu-text">
+                            <h3>3d artist</h3>
+                            <p>Ahli dalam membuat asset 3d untuk keperluan game developer. sedang mempelajari animasi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <img src="foto/data.png" alt="data" />
+                        <div class="edu-text">
+                            <h3>data analyst/sience</h3>
+                            <p>bisa mengelola data baik menggunakan SQL, Json maupun Excel</p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <img src="foto/Frontend.png" alt="Frontend" />
+                        <div class="edu-text">
+                            <h3>Frontend Developer</h3>
+                            <p>Menguasai HTML, CSS, dan JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <img src="foto/Backend.png" alt="Backend" />
+                        <div class="edu-text">
+                            <h3>Backend Developer</h3>
+                            <p>Menguasai PHP Native dan Laravel, serta sedang belajar React JS</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section" aria-label="Portofolio">
+            <h2>Portofolio</h2>
+            <div class="portfolio-grid">
+                <a href="portof.html?jenis=game">
+                    <div class="portfolio-card" tabindex="0">
+                        <img src="foto/game.png" alt="Project Game" />
+                        <h3>Game</h3>
+                    </div>
+                </a>
+                <a href="portof.html?jenis=web">
+                    <div class="portfolio-card" tabindex="0">
+                        <img src="foto/web.png" alt="Project Website" />
+                        <h3>Website</h3>
+                    </div>
+                </a>
+                <a href="portof.html?jenis=dekstop">
+                    <div class="portfolio-card" tabindex="0">
+                        <img src="foto/dekstop.png" alt="Project Desktop App" />
+                        <h3>Desktop App</h3>
+                    </div>
+                </a>
+                <a href="portof.html?jenis=3d model">
+                    <div class="portfolio-card" tabindex="0">
+                        <img src="foto/3d.png" alt="Project 3D Model" />
+                        <h3>3D Model</h3>
+                    </div>
+                </a>
+                <a href="portof.html?jenis=data sience">
+                    <div class="portfolio-card" tabindex="0">
+                        <img src="foto/data.png" alt="Project data sience" />
+                        <h3>data sience</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Rafif Fadhly. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleSection(id) {
+            const sec = document.getElementById(id);
+            const btn = sec.previousElementSibling;
+            const open = sec.classList.toggle('active');
+            btn.setAttribute('aria-expanded', open);
+            sec.setAttribute('aria-hidden', !open);
+        }
+    </script>
+
+</body>
+
+</html>
