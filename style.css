@@ -9,7 +9,7 @@
 
 /* GLOBAL */
 body {
-    background: linear-gradient(135deg, #210024, #35010e);
+    background: black;
     font-family: 'Montserrat', sans-serif;
     color: #ddd;
     overflow-x: hidden;
@@ -48,14 +48,13 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 2%;
-    background: url('foto/bg.jpg') center/cover no-repeat;
+    background: url('https://i.pinimg.com/736x/87/58/fe/8758fe27091f26dd31457709174f9b18.jpg') center/cover no-repeat;
     animation: fadeSlideIn 1s ease forwards;
 }
 
 .welcome-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(25, 0, 50, 0.8);
     animation: fadeSlideIn 1.2s ease forwards;
 }
 
@@ -64,7 +63,7 @@ body {
     z-index: 1;
     text-align: center;
     color: #a07aff;
-    text-shadow: 0 0 12px #a07affaa;
+    text-shadow: 0 0 15px #b79bffe0;
     animation: fadeSlideIn 1.5s ease forwards;
 }
 
@@ -83,7 +82,7 @@ body {
 .intro-card {
     display: flex;
     flex-wrap: nowrap;
-    background: #121212;
+    background: url('') center/cover no-repeat;
     border-radius: 30px;
     box-shadow: 0 0 25px rgba(255, 0, 0, 0.35), 0 0 35px rgba(0, 153, 255, 0.35);
     margin-bottom: 3rem;
@@ -190,20 +189,24 @@ body {
 
 /* COLLAPSIBLE CARD */
 .collapsible-card {
-    background: #1a1a1a;
+    background: url('https://png.pngtree.com/background/20220731/original/pngtree-abstract-purple-fabric-satin-textured-background-with-copy-space-for-banner-picture-image_1901514.jpg') center/cover no-repeat;
     border-radius: 22px;
     box-shadow: 0 0 20px rgba(255, 0, 43, 0.35), 0 0 30px rgba(0, 153, 255, 0.35);
     padding: 2.3rem 2.8rem;
     flex: 1 1 430px;
     max-width: 480px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: default;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeSlideIn 2.4s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-size 0.5s ease;
+    background-size: 70%;
+    backdrop-filter: blur(10px);
 }
 
 .collapsible-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 38px rgba(255, 0, 43, 0.65), 0 0 45px rgba(0, 153, 255, 0.65);
+    background-size: 50%;
 }
 
 .toggle-btn {
@@ -313,22 +316,26 @@ body {
 }
 
 .portfolio-card {
-    background: #121212;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9--iRn3jvJA3BdNxIyQMEmBzVp1yCLlTHi2UCfwYmIn5cTyhi05W2kolvAOaZlE364ak&usqp=CAU') center/cover no-repeat;
     border-radius: 30px;
+    background-size: 90%;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 25px rgba(255, 0, 43, 0.35);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-size 0.5s ease;
     outline-offset: 10px;
     user-select: none;
+    background-size: 110%; /* default lebih besar agar saat hover tampak menjauh */
 }
 
 .portfolio-card:focus,
 .portfolio-card:hover {
     transform: scale(1.07);
+    background-size: 86%;
     box-shadow: 0 0 42px rgba(255, 0, 43, 0.7);
     outline: none;
 }
+
 
 .portfolio-card img {
     width: 100%;
@@ -337,7 +344,6 @@ body {
     object-fit: contain;
     filter: brightness(0.88);
     transition: filter 0.3s ease;
-    background-color: #121212;
     margin-top: 50px;
 }
 
