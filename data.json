@@ -1,6 +1,13 @@
 [
   {
     "jenis": "game",
+    "judul": "El Walet (Team, 2025)",
+    "deskripsi": "Game Platformer dengan visual gabungan 2d dan 3d, dikerjakan untuk game jam unnes dengan tim.",
+    "gambar": "https://img.itch.zone/aW1hZ2UvMzg4MTY0OC8yMzE2NDMxMy5wbmc=/347x500/LZSoLW.png",
+    "link": "https://rfas-dev.itch.io/el-wallet"
+  },
+  {
+    "jenis": "game",
     "judul": "Lost Way (Team, 2025)",
     "deskripsi": "Roguelike zombie shooter dengan elemen survival dan eksplorasi, dikembangkan dalam tim kolaboratif.",
     "gambar": "https://img.itch.zone/aW1nLzIwNzQ2MTA4LnBuZw==/original/MOj%2FSI.png",
