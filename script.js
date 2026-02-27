@@ -266,14 +266,14 @@ const featuredProjects = [
     title: 'VIRTE - VR Exhibition',
     date: '2024',
     link: 'https://virte.diengcyber.com/',
-    image: '/foto-pt-web/virte.png',
+    image: './foto-pt-web/virte.png',
     icon: ''
   },
   {
     title: 'VIRLI - VR Seminar',
     date: '2024',
     link: 'https://virli.diengcyber.com',
-    image: '/foto-pt-web/virli.png',
+    image: './foto-pt-web/virli.png',
     icon: ''
   },
   {
