@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rafif Fadhly — Game Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- PARTICLES -->
+  <canvas id="particles"></canvas>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-brand">Rafif Dev<span class="accent">.</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#service" class="nav-link">Services</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════ HOME ═══════════════════════════ -->
+  <section id="home" class="section-home">
+    <div class="home-bg-rune"></div>
+    <div class="home-content">
+      <div class="home-text">
+        <div class="home-eyebrow">
+          <span class="eyebrow-line"></span>
+          <span>Welcome to my realm</span>
+        </div>
+        <h1 class="home-title">
+          <span class="title-hi">Hi, I'm</span>
+          <span class="title-name">Rafif<br/>Fadhly</span>
+        </h1>
+        <p class="home-sub">
+          A passionate <span class="accent-glow">Game Developer</span> crafting interactive worlds<br class="br-desktop"/>
+          where imagination meets code.
+        </p>
+        <div class="home-cta">
+          <a href="#portfolio" class="btn-primary">View My Work</a>
+          <a href="#about" class="btn-ghost">About Me</a>
+        </div>
+        <div class="home-socials">
+          <a href="https://www.linkedin.com/in/rafif-fadhly-adi-suwignyo-29612836b/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/RafifFadhly" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://rfas-dev.itch.io/" target="_blank" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
+          <a href="https://www.instagram.com/rafif_dev/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:rafiffadhly@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="home-image">
+        <div class="image-frame">
+          <div class="frame-ring ring-1"></div>
+          <div class="frame-ring ring-2"></div>
+          <div class="frame-ring ring-3"></div>
+          <img src="img/pp.png" alt="Rafif Fadhly" class="profile-photo" />
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+  <section id="about" class="section-about">
+    <div class="section-label">
+      <span class="label-line"></span>
+      <span>About</span>
+      <span class="label-line"></span>
+    </div>
+    <h2 class="section-title">The Developer<span class="accent">.</span></h2>
+    <div class="about-card">
+      <div class="about-text">
+        <p class="about-body">
+          Hello, my name is <strong>Rafif Fadhly Adi Suwignyo</strong>, an Informatics Engineering student at
+          Universitas Negeri Semarang (UNNES) with a strong interest in the growth and future of game development.
+        </p>
+        <p class="about-body">
+          I am passionate about the game industry because games are a highly interactive form of entertainment.
+          They can become a second world where people explore limitless imagination and enjoy immersive experiences.
+          For this reason, I see significant potential and exciting opportunities in the future of the game industry.
+        </p>
+        <div class="skill-block">
+          <h4>Languages</h4>
+          <div class="skill-icons">
+            <i class="devicon-csharp-plain colored" title="C#"></i>
+            <i class="devicon-cplusplus-plain colored" title="C++"></i>
+            <i class="devicon-dart-plain colored" title="Dart"></i>
+            <i class="devicon-python-plain colored" title="Python"></i>
+            <i class="devicon-php-plain colored" title="PHP"></i>
+            <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+          </div>
+        </div>
+        <div class="skill-block">
+          <h4>Software & Frameworks</h4>
+          <div class="skill-icons">
+            <i class="devicon-unity-plain colored" title="Unity"></i>
+            <i class="devicon-visualstudio-plain colored" title="Visual Studio"></i>
+            <i class="devicon-vscode-plain colored" title="VS Code"></i>
+            <i class="devicon-blender-original colored" title="Blender"></i>
+            <i class="devicon-mysql-plain colored" title="MySQL"></i>
+            <i class="devicon-dot-net-plain colored" title=".NET"></i>
+            <i class="devicon-laravel-plain colored" title="Laravel"></i>
+            <i class="devicon-flutter-plain colored" title="Flutter"></i>
+          </div>
+        </div>
+        <div class="about-actions">
+          <a href="/cv/cv_rafif.pdf" class="btn-primary" download>
+            <i class="fa fa-download"></i> Download CV
+          </a>
+          <a href="#portfolio" class="btn-ghost">
+            See Portfolio <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="img/pp.png" alt="Rafif Fadhly" />
+        <div class="about-image-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PORTFOLIO ═══════════════════════════ -->
+  <section id="portfolio" class="section-portfolio">
+    <div class="section-label">
+      <span class="label-line"></span>
+      <span>Portfolio</span>
+      <span class="label-line"></span>
+    </div>
+    <h2 class="section-title">My Works<span class="accent">.</span></h2>
+
+    <!-- Featured Projects Slider -->
+    <div class="featured-label">Featured Projects</div>
+    <div class="slider-wrapper">
+      <div class="slider-track" id="sliderTrack">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+
+    <!-- Category Cards -->
+    <div class="featured-label" style="margin-top:60px;">Browse by Category</div>
+    <div class="category-grid">
+      <a href="https://rfas-dev.itch.io/" target="_blank" class="cat-card" data-category="Game Dev">
+        <div class="cat-icon"><i class="devicon-unity-plain colored"></i></div>
+        <div class="cat-info">
+          <h3>Game Development</h3>
+          <p>Interactive experiences on itch.io</p>
+        </div>
+        <i class="fa fa-arrow-right cat-arrow"></i>
+      </a>
+      <a href="https://github.com/stars/RafifFadhly/lists/desktop-development" target="_blank" class="cat-card" data-category="Desktop Dev">
+        <div class="cat-icon"><i class="devicon-dot-net-plain colored"></i></div>
+        <div class="cat-info">
+          <h3>Desktop Development</h3>
+          <p>Powerful apps built with .NET</p>
+        </div>
+        <i class="fa fa-arrow-right cat-arrow"></i>
+      </a>
+      <a href="https://github.com/stars/RafifFadhly/lists/data-analyst" target="_blank" class="cat-card" data-category="Data Analyst">
+        <div class="cat-icon"><i class="devicon-python-plain colored"></i></div>
+        <div class="cat-info">
+          <h3>Data Analysis</h3>
+          <p>Insights powered by Python</p>
+        </div>
+        <i class="fa fa-arrow-right cat-arrow"></i>
+      </a>
+      <a href="https://github.com/stars/RafifFadhly/lists/web-development" target="_blank" class="cat-card" data-category="Web Dev">
+        <div class="cat-icon"><i class="devicon-html5-plain colored"></i></div>
+        <div class="cat-info">
+          <h3>Web Development</h3>
+          <p>Clean and responsive web apps</p>
+        </div>
+        <i class="fa fa-arrow-right cat-arrow"></i>
+      </a>
+      <a href="https://github.com/stars/RafifFadhly/lists/mobile-development" target="_blank" class="cat-card" data-category="Mobile Dev">
+        <div class="cat-icon"><i class="devicon-android-plain colored"></i></div>
+        <div class="cat-info">
+          <h3>Mobile Development</h3>
+          <p>Cross-platform apps with Flutter</p>
+        </div>
+        <i class="fa fa-arrow-right cat-arrow"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SERVICE ═══════════════════════════ -->
+  <section id="service" class="section-service">
+    <div class="section-label">
+      <span class="label-line"></span>
+      <span>Services</span>
+      <span class="label-line"></span>
+    </div>
+    <h2 class="section-title">What I Do<span class="accent">.</span></h2>
+    <p class="service-sub">Specialized in the art and craft of game creation — from concept to final build.</p>
+    <div class="service-grid">
+      <div class="service-card featured-service">
+        <div class="service-icon">
+          <i class="devicon-unity-plain colored" style="color: #D1DCE8;"></i>
+        </div>
+        <h3>Game Developer</h3>
+        <p>
+          End-to-end game development using Unity. I bring ideas to life by combining
+          design, programming, and storytelling into a cohesive, playable experience —
+          from prototype to polished release.
+        </p>
+        <ul class="service-tags">
+          <li>Unity</li><li>C#</li><li>Game Design</li><li>Prototyping</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h3>Game Programmer</h3>
+        <p>
+          Writing robust, maintainable game systems — physics interactions, AI behaviors,
+          UI logic, save systems, and more. Code that runs smooth and scales well.
+        </p>
+        <ul class="service-tags">
+          <li>C#</li><li>C++</li><li>Systems</li><li>Optimization</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-palette"></i>
+        </div>
+        <h3>Game Designer</h3>
+        <p>
+          Crafting compelling game mechanics, level layouts, and player experiences.
+          Balancing fun, challenge, and narrative flow to keep players engaged.
+        </p>
+        <ul class="service-tags">
+          <li>Level Design</li><li>Mechanics</li><li>Balancing</li><li>UX</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-brand">Rafif Dev<span class="accent">.</span></div>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/rafif-fadhly-adi-suwignyo-29612836b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/RafifFadhly" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://rfas-dev.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/rafif_dev/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:rafiffadhly@gmail.com"><i class="fa fa-envelope"></i></a>
+        <a href="https://wa.me/6282329216225" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <p class="footer-copy">© 2025 Rafif Fadhly Adi Suwignyo. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
